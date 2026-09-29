@@ -16,26 +16,35 @@
 <h2>Who uses the uploader</h2>
 <p>The Why Loop uploader is used only by The Why Loop to publish its own videos to its own accounts. It has no other users, and it does not collect data about viewers or other people.</p>
 
+<h2>YouTube API Services</h2>
+<p>The uploader uses YouTube API Services to upload our videos to our own YouTube channel. Google's use of data is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> (<a href="http://www.google.com/policies/privacy">www.google.com/policies/privacy</a>). By using the uploader you also agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</p>
+
 <h2>What it accesses</h2>
 <ul>
+<li>YouTube: permission to upload videos to our own channel (youtube.upload) and to read the processing status of the videos it uploaded (youtube.readonly). It does not read comments, subscribers, analytics or any other channel data.</li>
 <li>TikTok: basic profile information of our own account, and permission to send our videos to that account.</li>
-<li>YouTube: permission to upload videos to our own channel and to read their processing status.</li>
 <li>Instagram and Facebook: permission to publish Reels to our own Instagram account and Facebook Page.</li>
 </ul>
 
-<h2>Where data is kept</h2>
-<p>The access tokens the platforms issue are stored only on our own computer. They are not sent anywhere except back to the platform that issued them. We keep a log of what was posted and when, with the post IDs the platforms return.</p>
+<h2>How the data is used and stored</h2>
+<p>The access tokens the platforms issue are used only to upload our own videos and check that the upload finished. The YouTube and TikTok tokens are stored only on our own computer and are sent nowhere except back to the platform that issued them.</p>
+<p>So that Instagram posts go out at the planned time while our computer is off, the Facebook Page token and the Instagram account ID are also stored as encrypted secrets in our private GitHub repository, and a video waiting for Instagram is kept in that repository until it is posted. No YouTube data is stored there.</p>
+<p>From each upload we keep the platform's post ID, the link to the post and the time of the upload in a log, so the same video is not sent twice. The log contains nothing about viewers or other people.</p>
 
 <h2>Sharing</h2>
-<p>We do not sell, share or transfer any data to third parties, and we do not use it for advertising.</p>
+<p>We do not sell, share or transfer any data to third parties, and we do not use it for advertising. Nobody other than The Why Loop can see the data.</p>
 
-<h2>Deleting access</h2>
-<p>Access can be removed at any time in the security or connected apps settings of each platform. Tokens are also deleted from our computer when we stop using the uploader.</p>
+<h2>Cookies and devices</h2>
+<p>The uploader does not place cookies and does not collect information from anyone's device or browser. It does not show advertising or content from third parties.</p>
+
+<h2>Deleting data and revoking access</h2>
+<p>To delete the stored data, we remove the tokens and the log from our computer and the secrets from GitHub. We do this within 7 days when we stop using the uploader or when access is revoked.</p>
+<p>In addition to that, access to YouTube can be revoked at any time on the Google security settings page at <a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>. Access to the other platforms can be removed in their security or connected apps settings.</p>
 
 <h2>Contact</h2>
-<p>Questions: open an issue at <a href="https://github.com/TheWhyLoop/TheWhyLoop/issues">github.com/TheWhyLoop/TheWhyLoop</a>.</p>
+<p>Questions or complaints about these privacy practices: open an issue at <a href="https://github.com/TheWhyLoop/TheWhyLoop/issues">github.com/TheWhyLoop/TheWhyLoop</a>.</p>
 
-<nav><a href="index.html">Home</a><a href="terms.html">Terms of Service</a></nav>
+<nav><a href="index.html">Home</a><a href="terms.html">Terms of Service</a><a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a></nav>
 </main>
 </body>
 </html>
